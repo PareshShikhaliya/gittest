@@ -1,0 +1,15 @@
+Automatic memory management: In Java, you don't have to worry about freeing up memory that you no longer need. The language takes care of that for you.
+
+Speed (JIT compiler): Java is designed to be fast, and it includes a feature called a "Just-In-Time" (JIT) compiler that helps it run even faster.
+
+Backward compatibility: Java programs written a long time ago can still run on the latest versions of Java, so you don't have to worry about rewriting your old code.
+
+Object orientation: Java is an object-oriented language, which means it's designed to work with objects. This makes it easier to write complex programs and manage large amounts of data.
+
+Static typing (fail fast): Java is a "statically-typed" language, which means that the type of each variable is determined at compile time. This helps catch errors early in the development process, before the program is even run.
+
+Code as documentation: Java code is designed to be easy to read and understand, so you can often use the code itself as a reference instead of having to write separate documentation.
+
+Lots of open source libraries and frameworks: Java has a huge community of developers who create and share libraries and frameworks that make it easier to write Java programs
+
+Platform Independence: Java is designed to be "platform independent," which means that Java programs can run on different operating systems and hardware platforms without modification. This is because Java programs are compiled into an intermediate form called bytecode, which can be executed on any platform that has a Java Virtual Machine (JVM) installed. This feature makes Java an excellent choice for developing applications that need to run on multiple platforms, such as web applications or mobile apps.
