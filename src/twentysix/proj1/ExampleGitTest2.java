@@ -7,7 +7,7 @@ public class ExampleGitTest2 {
     public static void main(String[] args) {
         // Get a Calendar instance based on the current time in the default time zone
         Calendar calendar = Calendar.getInstance();
-
+        //test compare
         // Set the time zone to "America/New_York"
         TimeZone timeZone = TimeZone.getTimeZone("America/Denver");
         calendar.setTimeZone(timeZone);
