@@ -16,3 +16,4 @@ public class Example10
         System.out.println("Sum of odd numbers: " + sum);
     }
 }
+

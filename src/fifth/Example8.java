@@ -24,5 +24,10 @@ public class Example8 {
         for (int i = 0; i < tasks.size(); i++) {
             System.out.println((i+1) + ". " + tasks.get(i));
         }
+
+        for(String task1 : tasks)
+{
+    System.out.println(task1);
+}
     }
 }

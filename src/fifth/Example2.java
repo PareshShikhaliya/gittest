@@ -11,7 +11,7 @@ public class Example2 {
 
         System.out.println("Multiplication table for " + number + ":");
 
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 1; i <= 20; i++) {
             int product = number * i;
             System.out.println(number + " x " + i + " = " + product);
         }
