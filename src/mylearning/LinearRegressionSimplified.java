@@ -42,6 +42,11 @@ public class LinearRegressionSimplified {
         return yHat;
     }
 
+
+    public static double sigmoid(double[] x, double[] w, double b) {
+       double z = predictYHatforMultipleFeature(x,w,b);
+        return 1 / (1 + Math.exp(-z));
+    }
     /*Yes, computeCost calculates the mean squared error (MSE), which is a measure of the difference between the predicted values
      and the actual values of the dependent variable.
       It computes the difference between the predicted values (computed using
@@ -149,7 +154,7 @@ public class LinearRegressionSimplified {
         for (int i = 0; i < m; i++) {
 
             ;
-            double err = predictYHatforMultipleFeature(X[i],w,b) - y[i];
+            double err = sigmoid(X[i],w,b) - y[i];
             for (int j = 0; j < n; j++) {
                 dj_dw[j] += err * X[i][j];
             }
