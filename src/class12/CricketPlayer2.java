@@ -1,7 +1,7 @@
 package class12;
 
 public class CricketPlayer2 {
-    private String name;
+    private String name;//1kb
     private int age;
     private String team;
 

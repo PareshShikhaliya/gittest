@@ -2,15 +2,6 @@ package class13;
 
 public class Company {
     private String name;
-
-    public Company(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
     public static class Employee {
         private String name;
         private int age;
@@ -28,6 +19,16 @@ public class Company {
             return age;
         }
     }
+
+    public Company(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+
 
     public static void main(String[] args) {
         Company company = new Company("ABC Company");

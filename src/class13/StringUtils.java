@@ -10,7 +10,7 @@ public class StringUtils {
         String word1 = "radar";
         String word2 = "hello";
 
-        boolean isPalindrome1 = StringUtils.isPalindrome(word1);
+        boolean isPalindrome1 = isPalindrome(word1);
         boolean isPalindrome2 = StringUtils.isPalindrome(word2);
 
         System.out.println(word1 + " is a palindrome? " + isPalindrome1);  // Output: radar is a palindrome? true

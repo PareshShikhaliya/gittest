@@ -2,15 +2,6 @@ package class13;
 
 public class Bank {
     private String name;
-
-    public Bank(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
     public static class Account {
         private String accountNumber;
         private double balance;
@@ -40,6 +31,16 @@ public class Bank {
             }
         }
     }
+
+    public Bank(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+
 
     public static void main(String[] args) {
         Bank bank = new Bank("XYZ Bank");

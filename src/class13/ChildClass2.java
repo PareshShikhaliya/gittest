@@ -1,15 +1,19 @@
 package class13;
 
-public class ChildClass2 {
-    static {
-        System.out.println("Static block of ChildClass");
-    }
+public class ChildClass2
+{
 
-    static int childStaticField = initializeChildStaticField();
+    static int childStaticField ;
 
     {
         System.out.println("Initialization block of ChildClass");
     }
+
+    static {
+        System.out.println("Static block of ChildClass");
+    }
+
+
 
     int childNonStaticField = initializeChildNonStaticField();
 
@@ -27,7 +31,8 @@ public class ChildClass2 {
         return 40;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         ChildClass2 child = new ChildClass2();
     }
 }
