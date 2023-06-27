@@ -12,6 +12,9 @@ public class ArrayListExample3 {
         fruits.add("Orange");
         System.out.println("List after adding elements: " + fruits);
 
+        int size = fruits.size();
+        System.out.println("Size of the list: " + size);
+
         // Adding an element at a specific index
         fruits.add(1, "Mango");
         System.out.println("List after adding Mango at index 1: " + fruits);
@@ -47,7 +50,7 @@ public class ArrayListExample3 {
         System.out.println("Is the list empty? " + isEmpty);
 
         // Getting the size of the list
-        int size = fruits.size();
+        size = fruits.size();
         System.out.println("Size of the list: " + size);
 
         // Converting the list to an array

@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ArrayListIteration {
     public static void main(String[] args) {
-        List<String> fruits = new ArrayList<>();
+        ArrayList<String> fruits = new ArrayList<>();
         fruits.add("Apple");
         fruits.add("Banana");
         fruits.add("Orange");
@@ -14,12 +14,12 @@ public class ArrayListIteration {
 
         // 1. Using for loop
         System.out.println("Using for loop:");
-        for (int i = 0; i < fruits.size(); i++) {
+        for (int i = 0; i <fruits.size(); i++) {
             String fruit = fruits.get(i);
-            System.out.println(fruit);
+            //System.out.println(fruit);
         }
 
-        System.out.println();
+        //System.out.println();
 
         // 2. Using enhanced for loop (for-each loop)
         System.out.println("Using enhanced for loop:");

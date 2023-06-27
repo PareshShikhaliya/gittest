@@ -5,21 +5,23 @@ import java.util.ArrayList;
 public class ArrayListExample1 {
     public static void main(String[] args) {
         // Create an ArrayList to store integers
-        ArrayList<Integer> numbers = new ArrayList<>();
+        ArrayList<Integer> numbers = new ArrayList();
 
         // Add elements to the end of the list
-        numbers.add(10);
+        Integer n = 10;
+        numbers.add(n);
         numbers.add(20);
         numbers.add(30);
+        numbers.add(5);
+        numbers.add(n);
         System.out.println("ArrayList after adding elements: " + numbers);
 
+
+
         // Insert an element at the beginning of the list
-        numbers.add(0, 5);
+        numbers.add(0, 500);
         System.out.println("ArrayList after inserting element at index 0: " + numbers);
 
-        // Insert an element in the middle of the list
-        numbers.add(2, 15);
-        System.out.println("ArrayList after inserting element at index 2: " + numbers);
 
         // Remove an element from the list
         numbers.remove(1);

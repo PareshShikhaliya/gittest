@@ -79,7 +79,7 @@ public class Player {
     }
 
     public static List<Player> getListOfPlayers() {
-        List<Player> players = new ArrayList<>();
+
 
         String data1 = "SR Tendulkar (IND)~1989-2012~463~452~41~18426~200*~44.83~21368~86.23~30~96~20~2016~195";
         String data2 = "V Kohli (IND)~2008-2021~254~245~39~12169~183~59.07~12726~95.89~43~62~13~1140~121";
@@ -89,6 +89,7 @@ public class Player {
         Player player2 = new Player(data2);
         Player player3 = new Player(data3);
 
+        List<Player> players = new ArrayList<>();
         players.add(player1);
         players.add(player2);
         players.add(player3);
@@ -105,7 +106,7 @@ public class Player {
 
     public static void main(String[] args)
     {
-        var list =getListOfPlayers();
+        List<Player> list =getListOfPlayers();
         printPlayerData(list);
 
     }
