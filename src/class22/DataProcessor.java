@@ -13,7 +13,6 @@ class DataProcessingException extends RuntimeException {
 public class DataProcessor {
     public static void main(String[] args) {
 
-        processDataFile("data.txt");
         try {
             processDataFile("data.txt");
         } catch (Exception e) {

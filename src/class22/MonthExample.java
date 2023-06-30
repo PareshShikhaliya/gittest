@@ -4,12 +4,13 @@ import java.time.Month;
 
 public class MonthExample {
     public static int daysInMonth(Month month) {
-        return switch (month) {
+        int result = switch (month) {
             case JANUARY, MARCH, MAY, JULY, AUGUST, OCTOBER, DECEMBER -> 31;
             case APRIL, JUNE, SEPTEMBER, NOVEMBER -> 30;
             case FEBRUARY -> 28;
             default -> 0;
         };
+        return result;
     }
 
     public static void main(String[] args) {

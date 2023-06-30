@@ -1,7 +1,8 @@
 package class22;
 
 public class FruitExample {
-    public static Object getFruitInfo(String fruit) {
+    public static Object getFruitInfo(String fruit)
+    {
         return switch (fruit) {
             case "Apple", "Pear" -> {
                 String color = "Green";

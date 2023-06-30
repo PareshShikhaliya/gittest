@@ -9,6 +9,7 @@ public class OutOfMemoryExample {
 
         try {
             while (true) {
+                System.out.println("system is on....");
                 int[] array = new int[Integer.MAX_VALUE];
                 list.add(array);
             }
