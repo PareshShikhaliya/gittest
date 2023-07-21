@@ -1,0 +1,53 @@
+FileChannel is a class in Java's NIO (New Input/Output) package that provides a
+way to perform file I/O operations at a lower level than the traditional InputStream and OutputStream classes.
+ It allows you to read from and write to files using buffers and direct memory access,
+ which can provide improved performance compared to the traditional I/O classes.
+
+Here are some key features and concepts related to FileChannel:
+
+Obtaining a FileChannel:
+
+You can obtain a FileChannel instance by calling the getChannel() method on a FileInputStream, FileOutputStream, or RandomAccessFile object.
+Example: FileChannel channel = fileInputStream.getChannel();
+Reading from a FileChannel:
+
+Reading data from a file channel involves using a ByteBuffer to hold the data.
+You can create a ByteBuffer using the ByteBuffer.allocate() or ByteBuffer.allocateDirect() methods.
+The read() method of the FileChannel reads data from the channel into the buffer.
+After reading, you need to flip the buffer using the flip() method to prepare it for reading.
+Example: int bytesRead = channel.read(buffer);
+Writing to a FileChannel:
+
+Writing data to a file channel also involves using a ByteBuffer.
+You can create a ByteBuffer and put data into it using the put() methods.
+The write() method of the FileChannel writes data from the buffer to the channel.
+After writing, you need to clear the buffer using the clear() or compact() method.
+Example: int bytesWritten = channel.write(buffer);
+Position and File Size:
+
+The position() method returns the current position within the file channel.
+The position(long newPosition) method sets the position within the file channel.
+The size() method returns the current size of the file associated with the channel.
+Example: long position = channel.position();
+File Locking:
+
+FileChannel provides methods for acquiring and releasing file locks.
+File locks can be used to prevent other processes from accessing or modifying a file while it's locked.
+You can acquire an exclusive or shared lock on a file region using the lock() or tryLock() methods.
+Example: FileLock lock = channel.lock();
+File Truncation:
+
+The truncate(long size) method can be used to truncate a file to the given size.
+If the file is larger than the specified size, the extra bytes are discarded.
+Example: channel.truncate(1024);
+File Transfer:
+
+FileChannel provides methods for transferring data between channels, such as transferFrom() and transferTo().
+These methods can be used to efficiently transfer data between files or between a file and another channel.
+Example: channel.transferTo(0, channel.size(), targetChannel);
+Closing a FileChannel:
+
+It's important to close a FileChannel after you're done using it.
+You can close a FileChannel by calling its close() method.
+Example: channel.close();
+Note that FileChannel supports both blocking and non-blocking I/O operations, depending on how you configure the channel. It's recommended to consult the Java API documentation for more details and additional methods available in the FileChannel class.
