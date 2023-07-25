@@ -4,14 +4,14 @@ package module2.class1;
 
 // Class representing a bank account
 class BankAccount {
-    private String accountHolderName;
+    private String accountName;
     private long accountNumber;
     private double balance;
 
 
     // Constructor to create a bank account
     public BankAccount(String accountHolderName, long accountNumber) {
-        this.accountHolderName = accountHolderName;
+        this.accountName = accountHolderName;
         this.accountNumber = accountNumber;
         this.balance = 0.0; // Initialize balance to zero
     }
@@ -43,7 +43,7 @@ class BankAccount {
 
     // Method to get the account holder's name
     public String getAccountHolderName() {
-        return accountHolderName;
+        return accountName;
     }
 
     // Method to get the account number
@@ -57,6 +57,7 @@ public class Encapsulation {
     public static void main(String[] args) {
         // Create a bank account
         BankAccount account1 = new BankAccount("John Doe", 123456789);
+        System.out.println(account1.getAccountHolderName());
 
         // Deposit money into the account
         account1.deposit(1000.0);

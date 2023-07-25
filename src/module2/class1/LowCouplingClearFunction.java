@@ -61,7 +61,7 @@ class ShoppingCart {
 
     // Method to apply a 10% discount to the total price
     public double applyDiscount(double totalPrice) {
-        return totalPrice * 0.9; // Applying a 10% discount.
+        return totalPrice * 0.8; // Applying a 10% discount.
     }
     // Method to log the transaction details
     public void logTransaction(double totalPrice) {
