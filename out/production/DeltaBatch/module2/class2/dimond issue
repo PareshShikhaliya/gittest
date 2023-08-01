@@ -12,6 +12,7 @@ public:
 // First derived class FrontendDeveloper
 class FrontendDeveloper : virtual public Developer {
 public:
+
     void designUI() {
         cout << "FrontendDeveloper designs UI for frontend." << endl;
     }
@@ -34,7 +35,8 @@ public:
     }
 };
 
-int main() {
+int main()
+{
     FullStackDeveloper fullStackDeveloper;
     fullStackDeveloper.developFullStack();
     fullStackDeveloper.develop(); // Ambiguity: Which develop() to call? FrontendDeveloper's develop() or BackendDeveloper's develop()?

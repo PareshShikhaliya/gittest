@@ -5,7 +5,7 @@ public class StringVsStringBuilderExample {
         // Using String
         long startString = System.currentTimeMillis();
         String str = "";
-        for (int i = 0; i < 1000000; i++) {
+        for (int i = 0; i < 100000; i++) {
             str += "hello";
         }
         long endString = System.currentTimeMillis();
@@ -14,7 +14,7 @@ public class StringVsStringBuilderExample {
         // Using StringBuilder
         long startStringBuilder = System.currentTimeMillis();
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < 1000000; i++) {
+        for (int i = 0; i < 100000; i++) {
             sb.append("hello");
         }
         long endStringBuilder = System.currentTimeMillis();
