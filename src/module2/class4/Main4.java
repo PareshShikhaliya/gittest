@@ -1,7 +1,8 @@
 package module2.class4;
 
 // Implement the interface in a class
-class Car implements Vehicle {
+class Car implements Vehicle
+{
     @Override
     public void start() {
         System.out.println("Car started");

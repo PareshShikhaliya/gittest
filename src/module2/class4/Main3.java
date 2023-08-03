@@ -124,7 +124,8 @@ class QuickSort implements SortingAlgorithm {
 }
 
 public class Main3 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         SortingAlgorithm bubbleSort = new BubbleSort();
         SortingAlgorithm mergeSort = new MergeSort();
         SortingAlgorithm quickSort = new QuickSort();
