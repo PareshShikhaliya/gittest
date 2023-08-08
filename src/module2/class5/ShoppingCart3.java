@@ -13,7 +13,7 @@ public class ShoppingCart3 {
         cartItems.add(new Clothing("T-shirt", "Blue", "M"));
 
         // Incorrectly adding an item of wrong type to the cart
-        cartItems.add(42); // Adding an integer to the cart (incorrect)
+        cartItems.add(42);
 
         // Suppose we want to retrieve the first item from the cart
         Book firstItem = (Book)cartItems.get(1);

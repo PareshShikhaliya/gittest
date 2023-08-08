@@ -1,6 +1,7 @@
 package module2.class5;
 
 
+import java.net.InetSocketAddress;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +26,7 @@ class Motorcycle extends RoadVehicle {
     // ...
 }
 
-class Boat extends Vehicle{
+class Boat extends RoadVehicle {
     // ...
 }
 
@@ -43,12 +44,15 @@ public class TestLB {
         Motorcycle motorcycle = new Motorcycle();
         Boat boat = new Boat();
 
+        Integer a = 10;
+        Number a1 = a;
+
         addVehicle(roadVehicles, car); // Valid: List<Vehicle> is a superclass of List<? super Vehicle>
         addVehicle(roadVehicles, truck); // Valid: List<Vehicle> is a superclass of List<? super Vehicle>
         addVehicle(roadVehicles, motorcycle); // Valid: Motorcycle is a subclass of Vehicle
 
         // Compile error: Bicycle is not a subclass of Vehicle
-       // addVehicle(roadVehicles, boat);
+        addVehicle(roadVehicles, boat);
     }
 }
 

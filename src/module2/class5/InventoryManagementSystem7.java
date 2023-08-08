@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 // Generic Product class to store products of any type
-class Product<T> {
+class Product<T>
+{
     private T product;
 
     public Product(T product) {
@@ -97,7 +98,8 @@ public class InventoryManagementSystem7 {
     }
 
     // Generic method to display inventory details
-    <T> void displayInventoryDetails(List<Product<T>> inventory) {
+    <T> void displayInventoryDetails(List<Product<T>> inventory)
+    {
         for (Product<T> product : inventory) {
             T item = product.getProduct();
             if (item instanceof Electronics) {

@@ -15,7 +15,8 @@ public class GenericExample4 {
 }
 
 // Generic Class (Outer Class)
-class Box<T> {
+class Box<T>
+{
     private T content;
 
     public Box(T content) {
@@ -26,7 +27,8 @@ class Box<T> {
         return content;
     }
 
-    public void setContent(T content) {
+    public void setContent(T content)
+    {
         this.content = content;
     }
 }
