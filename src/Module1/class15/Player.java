@@ -78,7 +78,8 @@ public class Player {
         return sb.toString();
     }
 
-    public static List<Player> getListOfPlayers() {
+    public static List<Player> getListOfPlayers()
+    {
 
 
         String data1 = "SR Tendulkar (IND)~1989-2012~463~452~41~18426~200*~44.83~21368~86.23~30~96~20~2016~195";

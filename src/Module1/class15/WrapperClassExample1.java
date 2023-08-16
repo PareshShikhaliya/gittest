@@ -24,8 +24,8 @@ public class WrapperClassExample1 {
         System.out.println("Product: " + product);
 
         // Converting strings to wrapper class objects
-        Integer parsedInt = Integer.parseInt("123");
-        Double parsedDouble = Double.parseDouble("3.14");
+        int parsedInt = Integer.parseInt("123");
+        double parsedDouble = Double.parseDouble("3.14");
 
         System.out.println("Parsed Integer: " + parsedInt);
         System.out.println("Parsed Double: " + parsedDouble);
