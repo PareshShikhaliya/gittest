@@ -3,7 +3,7 @@ package Module1.class16;
 import java.util.HashSet;
 import java.util.Set;
 
-public class SetExample {
+public class SetExample1 {
     public static void main(String[] args) {
         // Create a set
         Set<String> fruits = new HashSet<>();

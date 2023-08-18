@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class SetVsListExample {
+public class SetVsListExample4 {
     public static void main(String[] args) {
         // Creating a Set
         Set<String> set = new HashSet<>();
