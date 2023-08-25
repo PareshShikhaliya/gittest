@@ -12,7 +12,8 @@ class Example {
     }
 
     // Static variable initializer
-    static int initializeStaticVariable() {
+    static int initializeStaticVariable()
+    {
         System.out.println("Initializing staticVariable");
         return 10;
     }

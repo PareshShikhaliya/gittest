@@ -39,9 +39,7 @@ class Child extends Parent {
 public class Main9 {
     public static void main(String[] args) {
         Child child = new Child();
-        System.out.println("Child.staticParentVar: " + Child.staticParentVar);
-        System.out.println("Child.staticChildVar: " + Child.staticChildVar);
-        System.out.println("child.instanceParentVar: " + child.instanceParentVar);
-        System.out.println("child.instanceChildVar: " + child.instanceChildVar);
+        System.out.println("==================================");
+        Child child2 = new Child();
     }
 }

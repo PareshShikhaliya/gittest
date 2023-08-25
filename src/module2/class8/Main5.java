@@ -12,13 +12,13 @@ class ParentCls extends Grandparent {
     }
 }
 
-class ChildCls extends ParentClass {
+class ChildCls extends ParentCls {
     static {
         System.out.println("Class ChildCls is loaded");
     }
 }
 
-class Grandchild extends ChildClass {
+class Grandchild extends ChildCls {
     static {
         System.out.println("Class Grandchild is loaded");
     }

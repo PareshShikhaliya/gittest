@@ -19,7 +19,8 @@ class BankAccount {
 }
 
 public class Main8 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         BankAccount account1 = new BankAccount("Alice", 1000.0);
         System.out.println("---");
         BankAccount account2 = new BankAccount("Bob", 1500.0);

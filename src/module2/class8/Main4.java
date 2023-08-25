@@ -1,7 +1,9 @@
 package module2.class8;
 
-class A {
-    static {
+class A
+{
+    static
+    {
         System.out.println("Class A is loaded");
     }
 }
@@ -13,7 +15,8 @@ class B extends A {
 }
 
 public class Main4 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         B obj = new B();
     }
 }

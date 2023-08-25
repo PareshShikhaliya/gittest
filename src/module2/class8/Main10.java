@@ -1,6 +1,7 @@
 package module2.class8;
 
-class ParentSample {
+class ParentSample
+{
     static {
         System.out.println("Static block of ParentSample class");
     }

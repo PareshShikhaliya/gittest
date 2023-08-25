@@ -2,14 +2,16 @@ package module2.class8;
 
 // Parent class Vehicle
 class Vehicle {
-    public Vehicle() {
+    public Vehicle()
+    {
         System.out.println("Vehicle constructor");
     }
 }
 
 // Child class Car extending Vehicle
 class Car extends Vehicle {
-    public Car() {
+    public Car()
+    {
         // When a Car object is created, its constructor is called.
         // But before that, the constructor of the parent class (Vehicle) is called first.
         // This is due to constructor chaining, where the child class constructor implicitly calls
