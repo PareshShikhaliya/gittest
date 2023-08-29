@@ -1,0 +1,25 @@
+sleep:
+
+Purpose: The Thread.sleep() method is used to suspend the execution of the current thread for a specified amount of time.
+Usage: It's used to introduce a delay or pause in the execution of a thread.
+Effect: During the sleep period, the thread releases the CPU and doesn't consume any CPU resources. Other threads can execute during this time.
+Guarantee: It guarantees that the thread will not execute for at least the specified duration, but there is no guarantee of the exact duration due to factors like thread scheduling and system load.
+Example: Thread.sleep(1000) suspends the thread's execution for approximately 1 second.
+
+yield:
+
+Purpose: The Thread.yield() method is used to suggest that the current thread is willing to yield its current use of the processor to other threads of the same priority.
+Usage: It's used to give other threads of the same priority a chance to run.
+Effect: The actual yielding behavior depends on the thread scheduler and system load. The thread might or might not yield to other threads, depending on the scheduler's decision.
+Guarantee: It doesn't guarantee that the thread will yield, and its effectiveness can vary between different JVM implementations.
+Example: Thread.yield() suggests that the current thread should give up its current time slice.
+In summary:
+
+sleep is used for introducing controlled delays between thread executions, and the thread definitely pauses for the specified duration.
+yield is used to allow other threads of the same priority to execute, but whether the thread actually yields depends on the thread scheduler's decision.
+While sleep is used to control timing intervals or introduce delays, yield is used to influence thread scheduling and give other threads a chance to run, albeit with varying effectiveness.
+
+
+
+
+
