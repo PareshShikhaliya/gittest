@@ -3,11 +3,11 @@ package module2.class12;
 class CounterWithoutSync {
     private int count = 0;
 
-    public void increment() {
+    public synchronized void increment() {
         count++;
     }
 
-    public int getCount() {
+    public synchronized int getCount() {
         return count;
     }
 }
@@ -29,7 +29,8 @@ class IncrementerWithoutSync implements Runnable {
 
 public class WithoutSyncExample1 {
     public static void main(String[] args) throws InterruptedException {
-        CounterWithoutSync counter = new CounterWithoutSync();
+        CounterWithoutSync counter = new CounterWithoutSync(); // shared Resource
+
 
         Thread thread1 = new Thread(new IncrementerWithoutSync(counter));
         Thread thread2 = new Thread(new IncrementerWithoutSync(counter));

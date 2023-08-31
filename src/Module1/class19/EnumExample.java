@@ -12,7 +12,6 @@ public class EnumExample {
         System.out.println(c2);  // Output: GREEN
         System.out.println(c3);  // Output: BLUE
 
-
         // Comparing enum values
         if (c1 == Color.RED) {
             System.out.println("c1 is RED");  // Output: c1 is RED

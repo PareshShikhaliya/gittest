@@ -16,13 +16,14 @@ class GracefulTerminator extends Thread {
     }
 }
 
-public class VolatileTerminationExample8 {
+public class VolatileTerminationExample8
+{
     public static void main(String[] args) throws InterruptedException {
         GracefulTerminator terminator = new GracefulTerminator();
         terminator.start();
 
         // Let the thread work for a while
-        Thread.sleep(1000);
+        Thread.sleep(10000);
 
         terminator.shutdown(); // Signal the thread to stop
         terminator.join(); // Wait for the thread to terminate

@@ -3,14 +3,16 @@ package module2.class12;
 import java.util.ArrayList;
 import java.util.List;
 
-class TrainReservationWithoutSync {
+class TrainReservationWithoutSync
+{
     private int availableSeats;
 
     public TrainReservationWithoutSync(int totalSeats) {
         this.availableSeats = totalSeats;
     }
 
-    public boolean reserveSeat(int numSeats) {
+    public synchronized boolean reserveSeat(int numSeats)
+    {
         if (numSeats <= availableSeats) {
             availableSeats -= numSeats;
             return true;
@@ -33,7 +35,8 @@ class UserWithoutSync implements Runnable {
     }
 
     @Override
-    public void run() {
+    public void run()
+    {
         if (reservation.reserveSeat(numSeats)) {
             System.out.println(Thread.currentThread().getName() + " reserved " + numSeats + " seat(s).");
         } else {
@@ -43,8 +46,9 @@ class UserWithoutSync implements Runnable {
 }
 
 public class TrainReservationWithoutSyncExample3 {
-    public static void main(String[] args) throws InterruptedException {
-        TrainReservationWithoutSync reservation = new TrainReservationWithoutSync(100);
+    public static void main(String[] args) throws InterruptedException
+    {
+        TrainReservationWithoutSync reservation = new TrainReservationWithoutSync(100); // SR
 
         List<Thread> threads = new ArrayList<>();
 

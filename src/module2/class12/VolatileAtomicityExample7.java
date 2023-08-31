@@ -12,9 +12,10 @@ class Counter {
     }
 }
 
-public class VolatileAtomicityExample7 {
+public class VolatileAtomicityExample7
+{
     public static void main(String[] args) {
-        Counter counter = new Counter(); // Create a counter
+        Counter counter = new Counter(); // Create a counter shared
 
         // Thread 1: Increments the counter
         Thread thread1 = new Thread(() -> {

@@ -18,7 +18,7 @@ class TrainReservationWithSync {
         return false;
     }
 
-    public synchronized int getAvailableSeats() {
+    public int getAvailableSeats() {
         return availableSeats;
     }
 }
@@ -37,7 +37,7 @@ class UserWithSync implements Runnable {
         if (reservation.reserveSeat(numSeats)) {
             System.out.println(Thread.currentThread().getName() + " reserved " + numSeats + " seat(s).");
         } else {
-            System.out.println(Thread.currentThread().getName() + " could not reserve seats.");
+           // System.out.println(Thread.currentThread().getName() + " could not reserve seats.");
         }
     }
 }
