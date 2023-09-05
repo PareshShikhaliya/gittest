@@ -46,7 +46,7 @@ public class FileSearchExample7 {
 
         String keyword = "Java";
 
-        ExecutorService executor = Executors.newFixedThreadPool(3); // Use 3 threads
+        ExecutorService executor = Executors.newFixedThreadPool(6); // Use 3 threads
 
         List<Future<List<String>>> futures = new ArrayList<>();
 

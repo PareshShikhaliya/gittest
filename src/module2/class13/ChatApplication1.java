@@ -8,7 +8,8 @@ class ChatUser implements Runnable {
     }
 
     @Override
-    public void run() {
+    public void run()
+    {
         System.out.println(username + " has joined the chat.");
         while (true) {
             // Simulate sending and receiving messages
@@ -40,7 +41,7 @@ public class ChatApplication1 {
         }
 
         // Interrupt all threads when the chat is over
-        chatGroup.interrupt();
+
         /*
         In the context of the chat application, calling chatGroup.interrupt();
          is a way to signal all the chat user threads that the chat session is over and it's time to stop.

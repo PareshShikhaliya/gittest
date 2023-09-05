@@ -38,7 +38,8 @@ public class ThreadPoolExample2 {
         System.out.println("All tasks are complete.");
     }
 
-    private static void waitForThreadsToFinish(ThreadGroup group) {
+    private static void waitForThreadsToFinish(ThreadGroup group)
+    {
         Thread[] threads = new Thread[group.activeCount()];
         group.enumerate(threads);
         for (Thread thread : threads) {

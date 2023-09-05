@@ -1,0 +1,26 @@
+newFixedThreadPool
+ — creates a thread pool that reuses a fixed number of threads to perform any number of tasks.
+
+ ExecutorService executor = Executors.newFixedThreadPool(10);
+
+
+newWorkStealingPool
+ – creates a pool of threads where number of threads = number of CPU cores that are available
+to the JVM. The default level of parallelism is one. This means
+that as many threads will be created in the pool as there are
+CPU cores available to the JVM. If the concurrency is 4, then
+the passed value is used instead of the number of cores.
+ExecutorService executor = Executors.newWorkStealingPool(4);
+
+
+newSingleThreadExecutor – creates a pool with a single
+thread to run all tasks. ExecutorService executor = Executors.newSingleThreadExecutor();
+
+newCachedThreadPool – creates a thread pool that creates new threads as needed, but will reuse previously created
+threads when available.
+ExecutorService executor = Executors.newCachedThreadPool();
+
+newScheduledThreadPool – creates a pool of threads that
+can schedule commands to execute after a given delay or for
+periodic execution.
+ScheduledExecutorService executor = Executors.newScheduledThreadPool(10);

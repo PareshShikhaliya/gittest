@@ -3,7 +3,8 @@ package module2.class13;
 class PriorityTask implements Runnable {
     private String taskName;
 
-    public PriorityTask(String taskName) {
+    public PriorityTask(String taskName)
+    {
         this.taskName = taskName;
     }
 

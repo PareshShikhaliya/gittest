@@ -26,7 +26,8 @@ class WebsiteScraper implements Callable<String> {
 }
 
 public class WebScrapingExample6 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         List<String> websites = new ArrayList<>();
         websites.add("https://www.example.com");
         websites.add("https://www.sample.com");
